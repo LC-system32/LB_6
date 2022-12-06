@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace It_s_easy
 {
@@ -6,7 +7,9 @@ namespace It_s_easy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world!");
+            int firstNum = int.Parse(Console.ReadLine());
+            int secondNum = int.Parse(Console.ReadLine());
+            Console.WriteLine($"{firstNum} + {secondNum} = {firstNum + secondNum}");
             Console.ReadKey();
         }
     }
